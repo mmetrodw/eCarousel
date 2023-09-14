@@ -1,11 +1,57 @@
 body {
   margin: 0px;
   padding: 0px;
-  background: red;
 }
 
 .ecwp-wrapper {
   position: relative;
   width: 100%;
   height: 300px;
+}
+
+.ecwp-wrapper * {
+  box-sizing: border-box;
+}
+
+.ecwp-carousel {
+  position: relative;
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  gap: 10px;
+}
+
+.ecwp-carousel-item {
+  position: relative;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  flex: 1 0 300px;
+}
+
+.ecwp-carousel-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.ecwp-carousel-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-content: stretch;
+  align-items: flex-start;
 }
